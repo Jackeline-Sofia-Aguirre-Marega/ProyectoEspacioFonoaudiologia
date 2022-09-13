@@ -49,6 +49,7 @@ ul li{
     margin: 20px;
     height: 25px;
     width: 80px;
+    transition: 1.5s;
     
 }
 li a {
@@ -57,8 +58,10 @@ li a {
     font-size: 1.3rem;
 }
 li:hover{
-    border: 1px #232931 transparent;
+    border: 1.5px #232931;
     background-color: #393E46;
+    transform:scale(1.1);
+    opacity: 0.8;
 }
 main{
     background-color: #000000;
@@ -160,22 +163,27 @@ footer{
     padding-top: 30px;
 }
 .imglenguaje{
-    width: 550px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
     margin-left: 30px;
     border: 1px #000000 transparent;
     border-radius: 100%;
+    box-shadow: 1px 1px 20px #4ECCA3;
+}
+.h3titulo {
+    margin: 10px;
 }
 .imagenlenguaje{
     display: flex;
     justify-content: left;
 } 
 .textolenguaje{
-    width: 600px;
+    width: 700px;
     display: flex;
     justify-content: center;
     align-self: center;
     flex-direction: column;
+    border: 1px grey solid;
     
 }
 
@@ -196,23 +204,26 @@ footer{
 .textofrase {
     display: flex;
     justify-content: center ;
+    color: grey;
     
 }
 .autor{
     display: flex;
-    color: #393E46;
+    color: #4ECCA3;
     justify-content: right;
     align-items: center;
+    font-size: 01.6rem;
 }
 .subtPrin{
     width: 100%;
     text-align: center;
+    margin-bottom: 50px;
 }
 .fondoclaro{
-    background-color: #393E46;
+    box-shadow: 1px 1px 20px #4ECCA3;
 }
 .fondooscuro{
-    background-color: #232931;
+    box-shadow: 1px 1px 20px #393E46;
 }
 
 
@@ -224,12 +235,13 @@ footer{
     display:flex;
     justify-content: center;
     align-items: center;
-    color: #EEEEEE;
-    font-size: 17px;
+    color: #000000;
+    font-size: 18px;
     padding-left: 30px;
+    background: linear-gradient(#4ECCA3,#393E46)
 }
 form{
-    width: 95%;
+    width: 95%; 
 }
 label{
     margin: 10px;
