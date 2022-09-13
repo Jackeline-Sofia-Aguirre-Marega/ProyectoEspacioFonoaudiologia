@@ -95,11 +95,17 @@ main{
     background-color:#393E46;
     box-shadow: 1px 1px 10px #393E46;
     margin: 5px;
+    transition: all 1s;
+}
+.bloque:hover{
+    transform: scale(1.04);
+    opacity: 0.9;
 }
 .bloqueimg{
     width: 200px;
     margin: 50px 50px 10px 50px;
 }
+
 .bloqueparrafo{
     color: #EEEEEE;
     padding: 20px;
