@@ -9,43 +9,89 @@
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display&family=Quicksand&display=swap" rel="stylesheet">
         <link rel="icon" href="./img/favicon.ico">
        <link rel="stylesheet" href="./css/estilo.css">
+
+       <!--Link bootstrap-->
+   <!-- CSS only -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
         <title>| Espacio Fonoaudiologia</title>
     </head>
 <body>
-    <div class="container">
+    <div class="contenedorGeneral">
         <header>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./Nosotros.html">Nosotros</a></li>
-                    <li><a href="./Areas.html">Áreas</a></li>
-                    <li><a href="./Noticias.html">Noticias</a></li>
-                    <li><a href="./Contacto.html">Contacto</a></li>
-                </ul>
+            <nav class="navbar navbar-dark bg-dark fixed-top">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./Areas.html">Áreas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./Noticias.html">Noticias</a>
+                        </li><li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./Nosotros.html">Nosotros</a>
+                        </li><li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./Contacto.html">Contacto</a>
+                        </li>
+                          <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <form class="d-flex align-items-center"  role="Buscar">
+                        <input class="form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
+                        <button type="button ustify-content-end" class="btn btn-outline-light">Buscar</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
             </nav>    
         </header>
-        <hr>    
         <main>
-            <section>
-                <div class="subtPrin">
-                    <h2>Noticias</h2>
+            <h3 class="d-flex justify-content-center">Noticias</h3>
+            <div class="card d-inline-flex p-1 my-4 fondoprin">
+                <div class="card-body fondoprin">
+                  <h5 class="card-title">Noticias</h5>
+                  <p class="card-text ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, officia iste asperiores, laboriosam praesentium rerum illo enim doloribus corrupti accusamus voluptatem nihil totam numquam saepe voluptates molestias, nostrum ratione! Impedit.</p>
+                  </form><a href="#" class="btn btn-outline-light">Ir</a>
                 </div>
-                <div class="fondoclaro">
-                    <h3>Noticias</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt unde autem eius consequatur iusto nam doloribus officia voluptate alias, quisquam accusantium ducimus laudantium dolore delectus sint ipsa! Corporis, laboriosam voluptates?</p>
+              </div>
+              <div class="card d-inline-flex p-1 my-4 fondoprin">
+                <div class="card-body fondoprin">
+                  <h5 class="card-title">Noticias</h5>
+                  <p class="card-text ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, officia iste asperiores, laboriosam praesentium rerum illo enim doloribus corrupti accusamus voluptatem nihil totam numquam saepe voluptates molestias, nostrum ratione! Impedit.</p>
+                  </form><a href="#" class="btn btn-outline-light">Ir</a>
                 </div>
-                <div class="fondooscuro">
-                    <h3>Noticias</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt unde autem eius consequatur iusto nam doloribus officia voluptate alias, quisquam accusantium ducimus laudantium dolore delectus sint ipsa! Corporis, laboriosam voluptates?</p>
+              </div>
+              <div class="card d-inline-flex p-1 my-4 fondoprin">
+                <div class="card-body fondoprin">
+                  <h5 class="card-title">Noticias</h5>
+                  <p class="card-text ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, officia iste asperiores, laboriosam praesentium rerum illo enim doloribus corrupti accusamus voluptatem nihil totam numquam saepe voluptates molestias, nostrum ratione! Impedit.</p>
+                  </form><a href="#" class="btn btn-outline-light">Ir</a>
                 </div>
-                <div class="fondoclaro">
-                    <h3>Noticias</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt unde autem eius consequatur iusto nam doloribus officia voluptate alias, quisquam accusantium ducimus laudantium dolore delectus sint ipsa! Corporis, laboriosam voluptates?</p>
+              </div>
+              <div class="card d-inline-flex p-1 my-4 fondoprin">
+                <div class="card-body fondoprin">
+                  <h5 class="card-title">Noticias</h5>
+                  <p class="card-text ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, officia iste asperiores, laboriosam praesentium rerum illo enim doloribus corrupti accusamus voluptatem nihil totam numquam saepe voluptates molestias, nostrum ratione! Impedit.</p>
+                  </form><a href="#" class="btn btn-outline-light">Ir</a>
                 </div>
-                     
-            </section>
+              </div>
         </main>
-        <hr> 
         <footer>
             <div class="bloquelogo">
                 <img class="logoPrincipalFooter" src="./img/F.png" alt="logo diseño">
@@ -58,5 +104,8 @@
             </div>
         </footer>
     </div>
+     <!--Bloque Bootstrap JavaScript -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>

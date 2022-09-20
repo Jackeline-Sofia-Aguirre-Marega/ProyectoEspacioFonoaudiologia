@@ -8,14 +8,14 @@ h1, h2, h3{
     color: #EEEEEE;
     font-size: 30px;
 }
-.container {
+.contenedorGeneral{
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 1fr 10fr 2fr; 
     grid-template-areas: 
       "header header header"
       "main main main"
-      "footer footer footer"; 
+      "footer footer footer";  
 }
 .subtitulos{
     margin: 20px;
@@ -32,36 +32,6 @@ header{
     background-color: #000000;
     height: auto;
     grid-area: header;
-}
-.navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 100px;
-    text-align: center;
-}
-ul{
-    list-style-type: none;
-}
-ul li{
-    display: inline-block;
-    text-align: center;
-    margin: 20px;
-    height: 25px;
-    width: 80px;
-    transition: 1.5s;
-    
-}
-li a {
-    text-decoration: none;
-    color: #4ECCA3;
-    font-size: 1.3rem;
-}
-li:hover{
-    border: 1.5px #232931;
-    background-color: #393E46;
-    transform:scale(1.1);
-    opacity: 0.8;
 }
 main{
     background-color: #000000;
@@ -191,87 +161,35 @@ footer{
 
 /* INICIO NOSOTROS */
 
-.frase {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    width: 60%;
+.nosfrase{
+    background-color: #EEEEEE;
 }
-.textofrase {
-    display: flex;
-    justify-content: center ;
-    color: grey;
-    
-}
-.autor{
-    display: flex;
-    color: #4ECCA3;
-    justify-content: right;
-    align-items: center;
-    font-size: 01.6rem;
-}
-.subtPrin{
-    width: 100%;
-    text-align: center;
-    margin-bottom: 50px;
-}
-.fondoclaro{
-    box-shadow: 1px 1px 20px #4ECCA3;
-}
-.fondooscuro{
-    box-shadow: 1px 1px 20px #393E46;
-}
-
 
 /* TERMINA NOSOTROS */
 
+/*INICIA NOTICIAS*/
+
+
+
+.fondoprin{
+    color: #EEEEEE;
+    box-shadow: 2px 2px 15px #4ECCA3;
+    background-color: #000000;
+}
+
+/* TERMINA NOTICIAS*/
+
+
+
 /*INCIA CONTACTO*/
 
-.bloqueformulario{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    color: #000000;
-    font-size: 18px;
-    padding-left: 30px;
-    background: linear-gradient(#4ECCA3,#393E46)
-}
-form{
-    width: 95%; 
-}
-label{
-    margin: 10px;
-}
-input{
-    width: 30%;
-    height: 25px;
-    display: flex;
-    justify-content: right;
-    margin: 10px;
-}
-.radiostyle{
-    width: 15px;
-    height: 15px;
-}
-textarea{
-    margin: 10px;
-    width: 300px;
-}
-.button{
-    height: 30px;
-    width: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    margin: 20px auto;
+.formulariocon{
+color: #EEEEEE; 
+background: linear-gradient(#000000,#4ECCA3,#000000);
 }
 
 /*TERMINA CONTACTO*/
+
 
                                      /* COMIENZA LAS @MEDIAS QUERIES */
 
@@ -279,7 +197,7 @@ textarea{
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
 
-    .container {
+    .contenedorGeneral{
         display: grid; 
         grid-template-columns: 1fr 1fr 1fr; 
         grid-template-rows: 1fr; 
@@ -344,7 +262,7 @@ textarea{
 
 @media screen and (min-width: 320px) and (max-width: 767px){
 
-    .container {
+    .contenedorGeneral {
         display: grid; 
         grid-template-columns: 1fr 1fr 1fr; 
         grid-template-rows: 1fr; 
@@ -355,13 +273,6 @@ textarea{
     }
     header{
         height: auto;
-    }
-    .navbar{
-        height: auto;
-    }
-
-    ul li{
-        margin: 10px;
     }
     .imgPrincipal{
         width: 100%;
@@ -400,11 +311,6 @@ textarea{
     /* TERMINA NOSOTROS */
     
     /*INCIA CONTACTO*/
-    
-    input{
-        width: 50%;
-    }
-
     /*TERMINA CONTACTO*/
 }
 /* Termina media queries para celulares */
