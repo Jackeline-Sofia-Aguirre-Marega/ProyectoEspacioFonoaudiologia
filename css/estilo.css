@@ -100,7 +100,7 @@ footer{
 }
 .logoPrincipalFooter{
     width: 150px;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 .bloquelogo{
     display: flex;
@@ -117,9 +117,8 @@ footer{
 }
 
 .logofooter{
-    width: 50px;    
-    padding-left: 5px;
-    padding-right: 5px;
+    width: 40px;  
+    margin: 5px;  
 }
 
 /* TERMINA INDEX */
@@ -175,6 +174,11 @@ footer{
     color: #EEEEEE;
     box-shadow: 2px 2px 15px #4ECCA3;
     background-color: #000000;
+    transition: all 1s;
+}
+.fondoprin:hover{
+    transform: scale(1.01);
+    opacity: 0.8;
 }
 
 /* TERMINA NOTICIAS*/
@@ -225,9 +229,8 @@ background: linear-gradient(#000000,#4ECCA3,#000000);
     .bloqueimg{
         margin: 50px;
     }
-    .logofooter{   
-        padding: auto;
-    }
+    
+
     
     /* TERMINA INDEX */
     
@@ -298,6 +301,11 @@ background: linear-gradient(#000000,#4ECCA3,#000000);
     }
     .textolenguaje{
         width: 100%;
+    }
+
+    .logofooter{
+        width: 30px;  
+        margin: 5px;  
     }
     
     /* TERMINA ÁREAS */
