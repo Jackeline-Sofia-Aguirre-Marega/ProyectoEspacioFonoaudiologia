@@ -1,0 +1,32 @@
+footer{
+    background-color: #000000;
+    grid-area: footer;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+
+    .bloquelogo{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+
+        .logoPrincipalFooter{
+            width: 150px;
+            padding-top: 10px;
+        }
+    }
+    .bloqueredes{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+
+        .logofooter{
+            width: 40px;  
+            margin: 5px;  
+        }
+    }
+}

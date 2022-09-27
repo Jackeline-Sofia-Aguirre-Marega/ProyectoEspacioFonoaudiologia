@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+
+$fuentetitulo:'Quicksand';
+$fuentesub:sans-serif;
+$colorclaro: #EEEEEE;
+$colorceleste: #4ECCA3;
+$colorgris: #393E46;
+
+@import "header";
+@import "footer";
+
+
+/* BODY */
+
+body{
+    .contenedorGeneral{
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 10fr 2fr; 
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "footer footer footer";  
+
+        main{
+            background-color: #000000;
+            height: auto;
+            grid-area: main;
+
+            section{
+                .imgPrincipal{
+                    width: 650px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0px auto auto auto;
+                }
+            }
+            .bloquePrincipal{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin-top: 0px;
+                background-color: #4ECCA3;
+
+                .bloqueSubtitulos{
+                    display: flex;
+                    flex-direction: column; 
+                    justify-content: center;               
+
+                    .subtitulos{
+                        margin: 20px;
+                        text-align: left;
+                        font-family: $fuentetitulo;
+                        color: $colorclaro;
+                    }    
+                    p{
+                        color: $colorclaro; 
+                        font-family: $fuentesub;
+                    }
+                }
+                .bloqueblock{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    .bloque{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 300px;
+                        background-color:#393E46;
+                        box-shadow: 1px 1px 10px #393E46;
+                        margin: 5px;
+                        transition: all 1s;
+                        
+                        .bloqueimg{
+                            width: 200px;
+                            margin: 50px 50px 10px 50px;
+                        }
+                        h2{
+                            font-family: $fuentetitulo;
+                            color: $colorclaro;
+                        }
+                        .bloqueparrafo{
+                            font-family:$fuentesub;
+                            color: $colorclaro;
+                            padding: 20px;
+                            width: 100%;
+                            text-align: left;
+                        }
+
+                    }
+
+                    .bloque:hover{
+                        transform: scale(1.04);
+                        opacity: 0.9;
+                    }
+
+                }
+            }
+        }
+
+        /* Pagina nosotros*/
+        .nosfrase{
+            background-color: $colorclaro;
+
+        }
+        .bloquenosotros{
+            color: $colorclaro;
+            padding-top: 30px;
+            margin: auto;
+            width: 75%;
+
+            h2{
+                font-family: $fuentetitulo;
+            }
+
+            p{
+                font-family: $fuentesub;
+            }
+        }
+
+        /* Pagina Areas*/
+        
+        .bloqueLenguaje{
+            display: flex;
+            padding-bottom: 20px;
+            justify-content: space-around;
+            padding-top: 30px;
+
+            .imagenlenguaje{
+                display: flex;
+                justify-content: left;
+
+                .imglenguaje{
+                    width: 450px;
+                    height: 450px;
+                    margin-left: 30px;
+                    border: 1px #000000 transparent;
+                    border-radius: 100%;
+                    box-shadow: 1px 1px 20px $colorceleste;
+                }
+            }
+        }
+        .textolenguaje{
+            width: 700px;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            flex-direction: column;
+            border: 2px grey solid;
+            
+
+            .h3titulo{
+                font-family: $fuentetitulo;
+                color: $colorclaro;
+                margin: 10px;
+            }
+            p{
+                font-family: $fuentesub;
+                color: $colorclaro;
+                margin: 10px;
+            }
+        }
+
+        /* Pagina contacto */
+
+        .formulariocon{
+            color: #EEEEEE; 
+            background: linear-gradient(#000000,#4ECCA3,#000000);
+            }
+
+            .fondoprin:hover{
+                transform: scale(1.01);
+                opacity: 0.8;
+            }
+    }
+
+      /* Pagina noticias */
+
+    h3{
+        color: $colorclaro;
+    }
+
+    .fondoprin{
+        color: #EEEEEE;
+        box-shadow: 2px 2px 15px #4ECCA3;
+        background-color: #000000;
+        transition: all 1s;
+    }
+}
