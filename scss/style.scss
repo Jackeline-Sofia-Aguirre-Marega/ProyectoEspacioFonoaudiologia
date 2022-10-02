@@ -69,36 +69,39 @@ body{
                     display: flex;
                     flex-direction: row;
                     flex-wrap: wrap;
-                    justify-content: center;
+                    justify-content:center;
                     align-items: center;
+                    
                     
                     .bloque{
                         display: flex;
                         flex-direction: column;
-                        align-items: center;
-                        justify-content: space-between;
+                        box-sizing: border-box;
                         width: 300px;
+                        height: 700px;
                         background-color:#393E46;
                         box-shadow: 1px 1px 10px #393E46;
                         margin: 5px;
                         transition: all 1s;
                         
+                        
                         .bloqueimg{
                             width: 200px;
                             margin: 50px 50px 10px 50px;
+                            
                         }
                         h2{
                             font-family: $fuentetitulo;
                             color: $colorclaro;
+                            text-align: center;
                         }
                         .bloqueparrafo{
                             font-family:$fuentesub;
                             color: $colorclaro;
-                            padding: 20px;
+                            padding: 10px;
                             width: 100%;
                             text-align: left;
                         }
-
                     }
 
                     .bloque:hover{
@@ -117,7 +120,7 @@ body{
         }
         .bloquenosotros{
             color: $colorclaro;
-            padding-top: 30px;
+            padding-top: 50px;
             margin: auto;
             width: 75%;
 
@@ -131,48 +134,49 @@ body{
         }
 
         /* Pagina Areas*/
-        
+
+    .fondo{
+    background-color: #000000;
+    
+        .titgeneralareas{
+            color: $colorclaro;
+            text-align: center;
+            padding-top: 30px;
+        }
+        }
+
         .bloqueLenguaje{
             display: flex;
-            padding-bottom: 20px;
             justify-content: space-around;
-            padding-top: 30px;
-
-            .imagenlenguaje{
-                display: flex;
-                justify-content: left;
-
-                .imglenguaje{
-                    width: 450px;
-                    height: 450px;
-                    margin-left: 30px;
-                    border: 1px #000000 transparent;
-                    border-radius: 100%;
-                    box-shadow: 1px 1px 20px $colorceleste;
-                }
-            }
+            columns: wrap;
+            background: linear-gradient($colorceleste,$colorgris,);
+        
         }
         .textolenguaje{
-            width: 700px;
+            width: 75%;
             display: flex;
             justify-content: center;
             align-self: center;
             flex-direction: column;
-            border: 2px grey solid;
+            margin: 10px;
+            padding-bottom: 20px;
             
-
+            
+        
             .h3titulo{
                 font-family: $fuentetitulo;
                 color: $colorclaro;
-                margin: 10px;
+                justify-items: center;
+                margin: 20px;
             }
             p{
                 font-family: $fuentesub;
-                color: $colorclaro;
+                color: black;
                 margin: 10px;
             }
         }
 
+        
         /* Pagina contacto */
 
         .formulariocon{

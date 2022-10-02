@@ -81,9 +81,9 @@ body {
           body .contenedorGeneral main .bloquePrincipal .bloqueblock .bloque {
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
+            box-sizing: border-box;
             width: 300px;
+            height: 700px;
             background-color: #393E46;
             box-shadow: 1px 1px 10px #393E46;
             margin: 5px;
@@ -93,11 +93,12 @@ body {
               margin: 50px 50px 10px 50px; }
             body .contenedorGeneral main .bloquePrincipal .bloqueblock .bloque h2 {
               font-family: "Quicksand";
-              color: #EEEEEE; }
+              color: #EEEEEE;
+              text-align: center; }
             body .contenedorGeneral main .bloquePrincipal .bloqueblock .bloque .bloqueparrafo {
               font-family: sans-serif;
               color: #EEEEEE;
-              padding: 20px;
+              padding: 10px;
               width: 100%;
               text-align: left; }
           body .contenedorGeneral main .bloquePrincipal .bloqueblock .bloque:hover {
@@ -107,42 +108,40 @@ body {
       background-color: #EEEEEE; }
     body .contenedorGeneral .bloquenosotros {
       color: #EEEEEE;
-      padding-top: 30px;
+      padding-top: 50px;
       margin: auto;
       width: 75%; }
       body .contenedorGeneral .bloquenosotros h2 {
         font-family: "Quicksand"; }
       body .contenedorGeneral .bloquenosotros p {
         font-family: sans-serif; }
+    body .contenedorGeneral .fondo {
+      background-color: #000000; }
+      body .contenedorGeneral .fondo .titgeneralareas {
+        color: #EEEEEE;
+        text-align: center;
+        padding-top: 30px; }
     body .contenedorGeneral .bloqueLenguaje {
       display: flex;
-      padding-bottom: 20px;
       justify-content: space-around;
-      padding-top: 30px; }
-      body .contenedorGeneral .bloqueLenguaje .imagenlenguaje {
-        display: flex;
-        justify-content: left; }
-        body .contenedorGeneral .bloqueLenguaje .imagenlenguaje .imglenguaje {
-          width: 450px;
-          height: 450px;
-          margin-left: 30px;
-          border: 1px #000000 transparent;
-          border-radius: 100%;
-          box-shadow: 1px 1px 20px #4ECCA3; }
+      columns: wrap;
+      background: linear-gradient(#4ECCA3, #393E46); }
     body .contenedorGeneral .textolenguaje {
-      width: 700px;
+      width: 75%;
       display: flex;
       justify-content: center;
       align-self: center;
       flex-direction: column;
-      border: 2px grey solid; }
+      margin: 10px;
+      padding-bottom: 20px; }
       body .contenedorGeneral .textolenguaje .h3titulo {
         font-family: "Quicksand";
         color: #EEEEEE;
-        margin: 10px; }
+        justify-items: center;
+        margin: 20px; }
       body .contenedorGeneral .textolenguaje p {
         font-family: sans-serif;
-        color: #EEEEEE;
+        color: black;
         margin: 10px; }
     body .contenedorGeneral .formulariocon {
       color: #EEEEEE;
