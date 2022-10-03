@@ -1,0 +1,7 @@
+La parte Seo:
+
+Modifique los titles de todas las paginas y tambien agrege los meta (Description y keywords) En cada una de ellas.
+
+La parte scss:
+
+Agrege un @extend en la parte de index, sobre los bloque de imagenes y @mixin realize dos en la parte superior de style.scss.

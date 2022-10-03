@@ -7,8 +7,7 @@ footer{
     align-items: center; 
 
     .bloquelogo{
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         justify-content: left;
         align-items: center;
 
@@ -18,8 +17,7 @@ footer{
         }
     }
     .bloqueredes{
-        display: flex;
-        flex-direction: row;
+        @include flex-row;
         align-items: center;
         justify-content: center;
         margin: auto;
