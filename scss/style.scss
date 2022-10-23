@@ -124,11 +124,32 @@ body{
         }
 
         /* Pagina nosotros*/
-        .nosfrase{
-            background-color: $colorclaro;
 
+        .bloque_autor{
+
+            width: 75%;
+            background: linear-gradient($colorceleste,$colorgris,);;
+            border-radius: 20px;
+            @include flex-column;
+            justify-content: center;
+            align-items: center;
+            margin: 40px auto; 
+
+            .frase{
+                font-size: 1.3rem;
+                text-align: left;
+                color: #000000;
+                width: 95%;
+                margin: 10px auto;
+            }
+            .autor{
+                text-align: right;
+                color: #000000;
+                margin: 10px 50px 10px auto;
+                font-size: $fuentetitulo;
+            }
         }
-
+        
         .parrafonos{
             font-family:$fuentesub;
             color: $colorclaro;
@@ -140,7 +161,33 @@ body{
             
         }
         .bloquenosotros{
-            display: flex;
+            @include flex-row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin: auto;
+
+
+            .card_nosotros{
+                width: 130px; 
+                margin: 40px auto;
+                
+
+                img{
+                    margin: 40px;
+                    width: 50%;
+                    background-color: $colorclaro;
+                    border-radius: 15px;
+                    text-align: center
+                }
+                h5{
+                    text-align: center;
+                    background-color: #000000;
+                    color: $colorclaro;
+                    
+                }
+            }
         }
 
         /* Pagina Areas*/
@@ -210,7 +257,15 @@ body{
         color: #EEEEEE;
         box-shadow: 2px 2px 15px #4ECCA3;
         background-color: #000000;
-        transition: all 1s;
+        transition: all 1s; 
+        @include flex-row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+        
+        
     }
 }
 
@@ -228,53 +283,54 @@ body{
         "header header header"
         "main main main"
         "footer footer footer"; 
-    }
-    .bloquePrincipal{
-        display: flex;
-        flex-direction: column;
-    }
-    .bloqueblock{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
 
+        .bloquePrincipal{
+            display: flex;
+            flex-direction: column;
+        }
+        .bloqueblock{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+    
+        }
+        .bloque{
+            flex-direction: row;
+            align-items: center;
+            width: auto;
+        }
+        .bloqueimg{
+            margin: 50px;
+        }
+        
+    
+        
+        /* TERMINA INDEX */
+        
+        /* INICIO ÁREAS */
+        
+        .bloqueLenguaje{
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+        }
+    
+    
+        /* TERMINA ÁREAS */
+        
+        /* INICIO NOSOTROS */
+        
+        /* TERMINA NOSOTROS */
+                 /* esta completo */
+        /*INCIA CONTACTO*/
+                 /* esta completo */
+        /*TERMINA CONTACTO*/
+    
+    
     }
-    .bloque{
-        flex-direction: row;
-        align-items: center;
-        width: auto;
-    }
-    .bloqueimg{
-        margin: 50px;
-    }
-    
-
-    
-    /* TERMINA INDEX */
-    
-    /* INICIO ÁREAS */
-    
-    .bloqueLenguaje{
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-    }
-
-
-    /* TERMINA ÁREAS */
-    
-    /* INICIO NOSOTROS */
-    
-    /* TERMINA NOSOTROS */
-             /* esta completo */
-    /*INCIA CONTACTO*/
-             /* esta completo */
-    /*TERMINA CONTACTO*/
-
-
+    /* Termina media queries para tablets */
 }
-/* Termina media queries para tablets */
 
 /* Comienza media queries para celulares */
 
@@ -282,53 +338,72 @@ body{
 
     .contenedorGeneral {
         display: grid; 
-        grid-template-columns: 1fr 1fr 1fr; 
-        grid-template-rows: 1fr; 
+        grid-template-columns: 1fr 1fr 1fr !important; 
+        grid-template-rows: 0.3fr 0.1fr !important; 
         grid-template-areas: 
         "header header header"
         "main main main"
-        "footer footer footer"; 
-    }
-    header{
-        height: auto;
-    }
-    .imgPrincipal{
-        width: 100%;
-    }
-    /* TERMINA INDEX */
+        "footer footer footer";
+        
+        .imgPrincipal{
+            width: 100% !important; 
+        }
+        .bloquePrincipal{
+            display: flex;
+            flex-direction: column;
+        }
+        .bloqueblock{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
     
-    /* INICIO ÁREAS */
+        }
+        .bloque{
+            flex-direction: row;
+            align-items: center;
+            width: auto;
+        }
+        .bloqueimg{
+            margin: 50px;
+        }
+        /* TERMINA INDEX */
+        
+        /* INICIO ÁREAS */
+        
+        .bloqueLenguaje{
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .imglenguaje{
+            width: 100%;
+            height: 100%;
+            margin: auto;
+        }
+        .imagenlenguaje{
+            width: 100%;
+            height: 100%;
+            align-items: center;
+        }
+        .textolenguaje{
+            width: 100%;
+        }
     
-    .bloqueLenguaje{
-        width: 100%;
-        flex-direction: column;
-        justify-content: center;
+        
+        
+        /* TERMINA ÁREAS */
+        
+        /* INICIO NOSOTROS */
+        
+        /* TERMINA NOSOTROS */
+        
+        /*INCIA CONTACTO*/
+        /*TERMINA CONTACTO*/
+        /* footer */
+        footer{
+            @include flex-column;
+        }
     }
-    .imglenguaje{
-        width: 100%;
-        height: 100%;
-        margin: auto;
-    }
-    .imagenlenguaje{
-        width: 100%;
-        height: 100%;
-        align-items: center;
-    }
-    .textolenguaje{
-        width: 100%;
-    }
-
-    
-    
-    /* TERMINA ÁREAS */
-    
-    /* INICIO NOSOTROS */
-
-             /* esta completo */
-    
-    /* TERMINA NOSOTROS */
-    
-    /*INCIA CONTACTO*/
-    /*TERMINA CONTACTO*/
 }
 /* Termina media queries para celulares */
